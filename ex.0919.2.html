@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 범위</title>
+   </head>
+    <body style="color:brown;">
+        <h1>전역변수와 지역변수</h1>
+        <script>
+            var x;
+            function f(){
+                let y;
+                let x;
+               this.x=10;
+                y=20;
+                document.writeln(y);
+                document.writeln(x);
+            }
+            f()
+            document.write(x)
+            let max=10;
+            document.write("<br>"+max);
+            max=20;
+            document.write("<br>"+max);  
+        </script>
+         <p_ onmouseover="document.body.style.color='black'"></p>
+    </body>
+</html>
