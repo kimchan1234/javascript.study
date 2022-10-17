@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swith 연습</title>
+</head>
+<body>
+    <h1>swith문 연습</h1>
+    <script>
+        let fruit=prompt("과일을 입력하세요","사과")
+        switch(fruit){
+            case"사과" :
+            price=300;
+            break;
+            case "배":
+            price=400;
+                break;
+            case "바나나":
+            price=500;
+                break;
+                default:
+                    document.write("해당과일이 없습니다")
+                    
+        }
+        document.write(fruit+"의 가격은 "+price+"원입니다")
+    </script>
+</body>
