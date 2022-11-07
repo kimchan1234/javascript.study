@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체</title>
+</head>
+<body id="back">
+<h1>date 객체와 string 객체</h1>
+<h3>date객체</h3>
+<hr>
+<script>
+    let now=new Date();
+    document.write(now);
+    document.write(now.getFullYear()+"년도<br>");
+    document.write(now.getMonth()+1+"월<br>")
+
+
+    if(now.getSeconds()%2==0){
+        document.body.style.backgroundColor="violet"
+    }else{
+        document.body.style.backgroundColor="skyblue"
+    } 
+
+
+</script>
+<hr>
+<h3>string 객체</h3>
+<script>
+     let hello=new String("안녕하세요");
+     for(let i=0;i<hello.length;i++){
+        document.write(hello[i]+"<br>");
+     }
+     let a=new String("boy and girl");
+     let b=new String("!!");
+     document.write(a+"<br>");
+     document.write(b+"<br>");
+     document.write(a.charAt(0)+"<br>");
+     document.write(a.concat(b,"입니다.")+"<br>")
+     document.write(a.indexOf("s")+"<br>");
+     document.write(a.indexOf("and")+"<br>");
+     document.write(a.slice(5,8)+"<br>");
+     document.write(a.substr(5,3)+"<br>");
+     document.write(a.toUpperCase()+"<br>");
+     document.write(a.replace("and","or")+"<br>");
+     document.write("       홍길동".trim()+"<br>");
+     let c=new String("201125-1234578");
+     document.write(c);
+     let sub=c.split(",");
+     document.write("<br"+sub[0]);
+
+</script>
+</body>
+</html>
