@@ -1,0 +1,48 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 프로토타입 만들기</title>
+    <script>
+        function Student(name,ID,phonenumber){
+          this.name=name;
+          this.ID=ID;
+          this.Phonenumber=phonenumber;
+          this.tgrade;
+          this.grade=function(score,cont){
+              this.avg=score/cont;
+              if(this.avg>=90){
+                 this.tgrade="a"
+              }else if(avg>=80){
+                this.tgrade="b"
+              }else if(avg>=70){
+                this.tgrade="c"
+              }
+              return this.tgrade;
+    
+                  
+              }
+
+          }
+
+
+
+
+
+        </script>
+</head>
+<body>
+    <h1>학생 프로토타입 만들고 사용해보기</h1>
+    <hr>
+    <script>
+        let student1 =new Student("홍길동","11111","010-0000-0000");
+        document.write(student1.name+","+student1.ID)
+        document.write(student1.grade(480,6));
+       
+            
+     
+
+    </script>
+</body>
